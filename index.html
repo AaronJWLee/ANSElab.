@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>개인 웹 페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .profile, .lab {
+            margin: 2em 0;
+            padding: 2em;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 2em 0;
+        }
+        .gallery img {
+            width: calc(33% - 10px);
+            border-radius: 8px;
+        }
+        .news {
+            margin: 2em 0;
+            padding: 2em;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>나의 웹 페이지</h1>
+    </header>
+    <nav>
+        <a href="#profile">프로필</a>
+        <a href="#lab">연구실 소개</a>
+        <a href="#gallery">이미지 갤러리</a>
+        <a href="#news">뉴스 게시판</a>
+    </nav>
+    <div class="container">
+        <section id="profile" class="profile">
+            <h2>나의 프로필</h2>
+            <p>여기에 본인의 프로필 정보를 작성하세요.</p>
+        </section>
+        <section id="lab" class="lab">
+            <h2>연구실 소개</h2>
+            <p>여기에 연구실 소개 내용을 작성하세요.</p>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2>이미지 갤러리</h2>
+            <img src="image1.jpg" alt="이미지 1">
+            <img src="image2.jpg" alt="이미지 2">
+            <img src="image3.jpg" alt="이미지 3">
+        </section>
+        <section id="news" class="news">
+            <h2>뉴스 게시판</h2>
+            <ul>
+                <li>뉴스 항목 1</li>
+                <li>뉴스 항목 2</li>
+                <li>뉴스 항목 3</li>
+            </ul>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 나의 웹 페이지. All rights reserved.</p>
+    </footer>
+</body>
+</html>
